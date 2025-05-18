@@ -1,244 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="ring">
+  <i style="--clr:#00ff0a;"></i>
+  <i style="--clr:#ff0057;"></i>
+  <i style="--clr:#fffd44;"></i>
+  <div class="login">
+    <h2>Login</h2>
+    <div class="inputBx">
+      <input type="text" placeholder="Username">
+    </div>
+    <div class="inputBx">
+      <input type="password" placeholder="Password">
+    </div>
+    <div class="inputBx">
+      <input type="submit" value="Sign in">
+    </div>
+    <div class="links">
+      <a href="#">Forget Password</a>
+      <a href="#">Signup</a>
+    </div>
+  </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohith's Webpage</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9; /* Light gray background */
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #003366, #004080); /* Dark blue gradient */
-            color: #fff;
-            padding: 60px 20px; /* Reduced padding for a cleaner look */
-            text-align: center;
-            border-bottom: 5px solid #ffd700; /* Gold border */
-            position: relative;
-            overflow: hidden;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem; /* Reduced font size */
-            line-height: 1.2;
-        }
-
-        header h2 {
-            margin: 10px 0;
-            font-size: 1.5rem; /* Reduced font size */
-            font-weight: 400;
-        }
-
-        header p {
-            margin: 20px auto;
-            font-size: 1rem; /* Standard font size */
-            max-width: 800px;
-        }
-
-        header a {
-            color: #ffd700; /* Gold color */
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid #ffd700; /* Gold underline effect */
-            transition: color 0.3s, border-bottom 0.3s;
-        }
-
-        header a:hover {
-            color: #fff;
-            border-bottom: 2px solid #fff; /* White underline on hover */
-        }
-
-        .header-animation {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 120px; /* Slightly smaller size */
-            height: 120px; /* Slightly smaller size */
-        }
-
-        section {
-            padding: 60px 20px; /* Consistent padding */
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .what-i-do {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-
-        .left-column, .right-column {
-            flex: 1;
-            max-width: 48%;
-        }
-
-        .left-column h2 {
-            font-size: 1.8rem; /* Reduced font size */
-            color: #003366; /* Dark blue color */
-            margin-bottom: 20px;
-        }
-
-        .left-column p {
-            font-size: 0.95rem; /* Slightly smaller font size */
-            line-height: 1.7;
-            color: #555; /* Dark gray text */
-            margin-bottom: 20px;
-        }
-
-        .right-column lottie-player {
-            width: 100%;
-            height: auto;
-        }
-
-        .contact {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin-top: 60px; /* Increased margin for spacing */
-            border: 1px solid #e0e0e0; /* Light gray border */
-            max-width: 600px; /* Constrained max-width */
-            margin-left: auto;
-            margin-right: auto; /* Centered contact section */
-        }
-
-        .contact h2 {
-            margin-top: 0;
-            font-size: 1.8rem; /* Reduced font size */
-            color: #003366; /* Dark blue color */
-        }
-
-        .contact form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact input, .contact textarea {
-            margin-bottom: 20px;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-
-        .contact input:focus, .contact textarea:focus {
-            border-color: #004080; /* Focus border color */
-            outline: none;
-        }
-
-        .contact textarea {
-            resize: vertical;
-        }
-
-        .contact button {
-            padding: 12px;
-            background-color: #004080; /* Medium blue color */
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1rem;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-
-        .contact button:hover {
-            background-color: #003366; /* Darker blue on hover */
-        }
-
-        /* Mobile compatibility */
-        @media (max-width: 768px) {
-            .what-i-do {
-                flex-direction: column;
-            }
-
-            .left-column, .right-column {
-                max-width: 100%;
-            }
-        }
-    </style>
-    <!-- Lottie Web Player Library -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animated Login Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" />
 </head>
-<body>
-    <header>
-        <lottie-player
-            src="https://lottie.host/33f4c02e-3610-4b30-ad72-4d742551c86e/yesegCKba5.json"
-            background="transparent"
-            speed="1"
-            class="header-animation"
-            loop
-            autoplay
-        ></lottie-player>
-        <h1>Hi, I am Rohith <span class="wave">👋</span></h1>
-        <h2>A B.Sc Cyber Forensic student from Kerala</h2>
-        <p>I am passionate about finding ways to use different security tools and app/web development efficiently for people in business and studies.</p>
-        <a href="https://youtu.be/VB1w56ZNb7w?si=wrx5fdA8TzVnSnlw" target="_blank">Learn More ></a>
-    </header>
+<body style="background: url('1315107.jpeg') no-repeat center center fixed; background-size: cover;">
 
-    <section class="what-i-do">
-        <div class="left-column">
-            <h2>What I Do</h2>
-            <p>Hello! My name is Rohith Lal, and I'm from Punalur, Kerala, India. I am currently pursuing a B.Sc in Cyber Forensics. My passion lies in coding, app development, and website development.</p>
-            <p>I have a strong foundation in cybersecurity, network security, and internet protocols. Additionally, I have mastered various ethical hacking software and tools. My expertise also extends to software engineering and development, allowing me to build robust and efficient software solutions.</p>
-            <p>With a keen interest in the ever-evolving tech landscape, I am dedicated to expanding my knowledge and skills to stay at the forefront of the industry.</p>
-            <a href="https://youtube.com/@rohithfx?si=-cZS0al0BYF50s60" target="_blank">YouTube Channel ></a>
-        </div>
-        <div class="right-column">
-            <!-- Main Lottie Animation -->
-            <lottie-player
-                src="https://lottie.host/623865ca-ab72-409d-bc82-4dd735f64e18/S8lHabZu51.json"
-                background="transparent"
-                speed="1"
-                style="width: 100%; height: 300px;"
-                loop
-                autoplay
-            ></lottie-player>
-        </div>
-    </section>
+  <div class="ring">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
 
-    <section class="contact">
-        <h2>Get In Touch With Me!</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Enter Your Message Here" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <form class="login" onsubmit="return false;">
+      <h2>Login</h2>
+      <div class="inputBx">
+        <input type="text" name="username" placeholder="Username" aria-label="Username" required>
+      </div>
+      <div class="inputBx">
+        <input type="password" name="password" placeholder="Password" aria-label="Password" required>
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Sign In">
+      </div>
+      <div class="links">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Signup</a>
+      </div>
+    </form>
+  </div>
 
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const form = event.target;
-            const formData = new FormData(form);
-
-            fetch('https://formsubmit.co/rohithlal2024@gmail.com', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('Message sent successfully!');
-                form.reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred while sending the message.');
-            });
-        });
-    </script>
+  <script src="javascript.js"></script>
 </body>
 </html>
